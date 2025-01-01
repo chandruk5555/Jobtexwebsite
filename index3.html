@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobtex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body class="bg-[#F5F5F2]">
+       <!-- Header Section -->
+        <div>
+        <div class="bg-[url('/images/slider1.jpg')] bg-no-repeat bg-cover">
+            <div class="bg-black/60">
+    <header class="flex pb-4 md:text-white bg-white text-black md:bg-transparent fixed md:static">
+       <div class="md:hidden flex"><img src="./images/logo_black.png" alt=""></div>
+        <div class="md:flex hidden"><img src="./image2/logo-white.svg" alt="" class="md:pl-4 md:pb-4 pl-2 md:pt-0 pt-2"></div>
+        <p class="md:pl-7 md:pr-24 md:pt-10 md:text-xl md:hover:cursor-pointer md:hover:underline md:flex hidden"><i class="icon-grid"></i>Categories</p>
+        <!-- navigation link -->
+        <nav>
+            <ul class="md:flex md:gap-4 md:pt-10 hidden">
+                <li class="hover:underline text-xl hover:home hover:cursor-pointer flex">Homes
+                    <img src="./images/down.png" alt="" class="w-6 h-6 pt-1">
+                </li>
+                <li class="hover:underline hover:cursor-pointer text-xl flex">Find Jobs<img src="./images/down.png" alt="" class="w-6 h-6 pt-1 "></li>
+                <li class="hover:underline hover:cursor-pointer text-xl flex">Employers<img src="./images/down.png" alt="" class="w-6 h-6 pt-1"></li>
+                <li class="hover:underline hover:cursor-pointer text-xl flex">Candidates<img src="./images/down.png" alt="" class="w-6 h-6 pt-1"></li>
+                <li class="hover:underline hover:cursor-pointer text-xl flex">Pages<img src="./images/down.png" alt="" class="w-6 h-6 pt-1"></li>
+            </ul>
+        </nav>
+        <!-- login -->
+         <div class="md:pt-10 md:pl-80 md:flex md:gap-3 pl-40 pt-4">
+            <div class="flex gap-2">
+        <div class="hover:cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+              </svg>
+              
+        </div>
+        <div class="hover:cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              </svg>
+              
+        </div>
+        <button onclick="myFunction()" id="menuicon"class="lg:hidden md:hidden flex relative">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>                  
+            </button>
+            <button id="closeicon" onclick="myFunction()" class="lg:hidden md:hidden hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+            </button>
+    </div> 
+        <!-- mydiv -->
+        <div id="mydiv" class="fixed bg-white top-0 bottom-0 left-0 right-20  text-left pl-4 rounded-lg hidden md:hidden">
+
+            <img src="./images/logo_black.png" alt="" class="w-36 h-auto pt-3 pb-2">
+           <hr>
+            <ul class="text-bold-600 pt-9">
+                 
+                <li class="p-2 text-xl text-black hover:underline pb-4"><a href="#" class="hover:text-blue-500">Homes</a></li><hr>
+                <li class="p-2 text-xl text-black hover:underline pb-4 "><a href="#" class="hover:text-blue-500">Find Jobs</a></li><hr>
+                <li class="p-2 text-xl text-black hover:underline pb-4 "><a href="#" class="hover:text-blue-500">Employers</a></li><hr>
+                <li class="p-2 text-xl text-black hover:underline pb-4 "><a href="#" class="hover:text-blue-500">Candidates</a></li><hr>
+                <li class="p-2 text-xl text-black hover:underline pb-4 "><a href="#" class="hover:text-blue-500">Pages</a></li><hr>
+            </ul>
+         </div>
+         <!-- mydiv end -->
+        <div class="">
+            <p class="pb-2 hover:cursor-pointer md:flex hidden">Login/Register</p>
+            <button class="w-36 h-14 md:flex justify-center items-center hidden bg-transparent border-2 border-green-500 text-white text-center pt-1 rounded mr-6 text-xl hover:bg-green-500">Post job</button>
+        </div>
+    </div>
+    </header>
+    <hr>
+    <!-- section -->
+     <section>
+        <div class="md:grid md:grid-cols-2 md:text-white text-white">
+        <div class="p-10">
+        <h1 class="md:text-5xl text-3xl md:pt-0 pt-6">Find the Job That</h1>
+        <h1 class="md:text-5xl text-3xl">Fits Your life</h1>
+        <p class="pt-5 text-xl">
+            Resume-Library is a true performance-based job board. Enjoy custom hiring products and access to up to 10,000 new resume registrations daily, with no subscriptions or user licences.
+        </p>
+    </div>
+    <div>
+    </div>
+</div>
+<!-- input type -->
+ <div class="bg-white md:flex justify-between  p-6 ml-6 gap-3 rounded w-3/4">
+<div class="md:flex md:w-2/4 md:gap-2 flex gap-2 md:mb-0 mb-2">
+    <div class="md:pt-3">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+      </svg></div>
+    <input type="text" placeholder="Job title, keywords or company" class="md:w-full w-full">
+</div>
+ <div class="flex gap-2">
+    <div class="md:pt-3">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+      </svg></div>    
+    <input type="text" placeholder="All Location"></div>
+ <div class="bg-green-500  w-32 h-12 rounded hover:cursor-pointer text-center flex justify-center items-center text-white hover:bg-white hover:text-green-500 hover:border-2 hover:border-green-500 md:mt-0 mt-2"><p>Find Jobs</p></div>
+ </div>
+<!-- design -->
+<div>
+    <ul class="text-white flex md:gap-5 md:px-10 md:pt-8 md:pb-28 gap-2 p-3">
+        <li class="hover:underline hover:cursor-pointer">Designer</li>
+        <li class="hover:underline hover:cursor-pointer">Developer</li>
+        <li class="hover:underline hover:cursor-pointer">Tester</li>
+        <li class="hover:underline hover:cursor-pointer">Writing</li>
+        <li class="hover:underline hover:cursor-pointer">Project Manager</li>
+    </ul>
+</div> 
+</section>
+</div>
+</div>
+</div>
+<!-- Browse Category -->
+ <div class="p-14">
+    <h1 class="text-4xl font-bold">Browser by category</h1>
+    <p class="text-gray-500 pt-5 text-xl">Recruitment Made Easy in 100 seconds</p>
+ </div>
+ <!-- features -->
+  <div class="md:grid md:grid-cols-5 md:text-center md:ml-5 md:gap-4 grid grid-cols-1">
+    <div class="md:bg-white md:p-5 md:text-center md:rounded md:hover:cursor-pointer md:hover:bg-[#123841] md:hover:text-white bg-gray-100 p-5 text-center rounded hover:cursor-pointer hover:bg-[#123841] hover:text-white">
+        <h1 class="text-xl font-bold">Human Resources</h1>
+    <p class="pr-14">2 Jobs available</p>
+    <div class="flex gap-2 pt-2 justify-center items-center">  
+    <p class="text-green-500">Explore Jobs</p>
+    <img src="./images/arrow.png" alt="" width="14px" height="1px">
+    </div>
+    </div> 
+    <div class="bg-white p-5 text-center rounded hover:cursor-pointer  hover:bg-[#123841] hover:text-white">
+        <h1 class="text-xl font-bold">Project Manager</h1>
+    <p class="pr-10">0 Jobs available</p>
+    <div class="flex gap-2 pt-2 justify-center items-center">  
+    <p class="text-green-500">Explore Jobs</p>
+    <img src="./images/arrow.png" alt="" width="14px" height="1px">
+     </div>
+    </div>
+    <div class="bg-white p-5 text-center rounded hover:cursor-pointer hover:bg-[#123841] hover:text-white">
+        <h1 class="text-xl font-bold">Delivery Driver</h1>
+    <p class="pr-8">1 Jobs available</p>
+    <div class="flex gap-2 pt-2 justify-center items-center">
+    <p class="text-green-500">Explore Jobs</p>
+    <img src="./images/arrow.png" alt="" width="18px" height="0px">
+    </div>
+    </div>
+    <div class="bg-white p-5 text-center rounded hover:cursor-pointer  hover:bg-[#123841] hover:text-white">
+        <h1 class="text-xl font-bold">Accounting</h1>
+    <p class="pr-0">3 Jobs available</p>
+    <div class="flex gap-2 pt-2 justify-center items-center">
+    <p class="text-green-500">Explore Jobs</p>
+    <img src="./images/arrow.png" alt="" width="18px" height="0px">
+</div>
+    </div>
+    <div class="bg-white p-5 text-center rounded mr-3 hover:cursor-pointer  hover:bg-[#123841] hover:text-white">
+        <h1 class="text-xl font-bold">Custom Service</h1>
+    <p class="pr-6">2 Jobs available</p>
+    <div class="flex gap-2 pt-2 justify-center items-center">
+    <p class="text-green-500">Explore Jobs</p>
+    <img src="./images/arrow.png" alt="" width="18px" height="0px">
+    </div>
+    </div>
+    <div class="bg-white p-5 text-center rounded hover:cursor-pointer hover:bg-[#123841] hover:text-white">
+        <h1 class="text-xl font-bold">Data Science</h1>
+    <p class="text-center">2 Jobs available</p>
+    <div class="flex gap-2 pt-2 justify-center items-center">
+    <p class="text-green-500">Explore Jobs</p>
+    <img src="./images/arrow.png" alt="" width="18px" height="0px">
+    </div> 
+    </div>
+    <div class="bg-white p-5 text-center rounded hover:cursor-pointer hover:bg-[#123841] hover:text-white">
+        <h1 class="text-xl font-bold">Engineering</h1>
+    <p class="text-center">0 Jobs available</p>
+    <div class="flex gap-2 pt-2 justify-center items-center">
+    <p class="text-green-500">Explore Jobs</p>
+    <img src="./images/arrow.png" alt="" width="18px" height="0px">
+    </div>
+    </div>
+    <div class="bg-white p-5 text-center rounded hover:cursor-pointer hover:bg-[#123841] hover:text-white">
+        <h1 class="text-xl font-bold">IT & Networking</h1>
+    <p class="pr-10">1 Jobs available</p>
+    <div class="flex gap-2 pt-2 justify-center items-center">
+    <p class="text-green-500">Explore Jobs</p>
+    <img src="./images/arrow.png" alt="" width="18px" height="0px">
+    </div>
+    </div>
+    <div class="bg-white p-5 text-center rounded hover:cursor-pointer hover:bg-[#123841] hover:text-white">
+        <h1 class="text-xl font-bold">Sales & Marketing</h1>
+    <p class="pr-0">3 Jobs available</p>
+    <div class="flex gap-2 pt-2 justify-center items-center">
+    <p class="text-green-500 text-center">Explore Jobs</p>
+    <img src="./images/arrow.png" alt="" width="18px" height="0px">
+    </div>
+    </div>
+    <div class="bg-white p-5 text-center rounded mr-3 hover:cursor-pointer  hover:bg-[#123841] hover:text-white">
+        <h1 class="text-xl font-bold">Writing</h1>
+    <p class="">2 Jobs available</p>
+    <div class="flex gap-2 pt-2 justify-center items-center">
+    <p class="text-green-500 text-center">Explore Jobs</p>
+    <img src="./images/arrow.png" alt="" width="18px" height="0px">
+    </div>
+    </div>
+  </div>
+  <!-- featured jobs -->
+   <div class="text-center mt-20">
+   <h1 class="text-4xl font-bold">Featured Jobs</h1>
+   <p class="pt-4 text-xl text-gray-500">Find the job that’s perfect for you. about 800+ new jobs everyday</p>
+</div>
+<!-- payment -->
+ <div class="md:grid-cols-2 grid grid-cols-1">
+    <div class="border-2 border-r-gray-300 gap-8 p-5 m-4 hover:border-green-500">
+        <div class="flex gap-3">
+        <img src="./images/cty9.png" alt="" class="w-14 h-14">
+        <div>
+        <p class="text-green-500 hover:underline">IT & Networking</p>
+        <div class="flex gap-1">
+        <h1 class="text-2xl font-bold hover:text-green-600">Software Engineer</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+        <div class="flex justify-between pt-2">
+        <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+          52 Irving Pl, NY</div><div class="flex pl-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+              </svg>
+              June 20, 2023</div> </div>
+            </div>
+        </div>
+        <div class="m-4">
+        <span class="bg-gray-200 rounded-2xl p-2 px-4 hover:text-green-500 hover:cursor-pointer">Temporary</span>
+    </div>
+    <div class="bg-gray-300 h-0.5 w-12/12 mx-auto"></div>
+        <div class=" flex pl-4 pt-4">
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              </div>
+           <p>$400 - $450 / month</p><p class="pl-4 md:pl-96">June 14, 2030</p>
+        </div>
+    </div>
+    <div class="border-2 border-gray-300 gap-8 p-5 m-4 hover:border-green-500">
+        <div class="flex gap-3">
+        <img src="./images/cty11.png" alt="" class="w-14 h-14">
+        <div>
+        <p class="text-green-500 hover:underline">IT & Networking</p>
+        <div class="flex gap-1">
+        <h1 class="text-2xl font-bold hover:text-green-600">Sales Specialist</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+        <div class="flex gap-3 pt-2">
+        <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+          433 Graham Ave</div><div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+              </svg>
+              June 20, 2023</div> </div>
+            </div>
+        </div>
+        <div class="m-4">
+        <span class="bg-gray-200 rounded-xl p-2 hover:text-green-500 hover:cursor-pointer">Full Time</span> <span class="bg-red-100 text-red-500 rounded-xl p-2 ml-4">Urgent</span>
+    </div>
+    <div class="bg-gray-300 h-0.5 w-12/12 mx-auto"></div>
+        <div class=" flex pl-4 pt-4">
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              </div>
+           <p>$750 - $800 / month</p><p class="md:pl-96 pl-4">June 5, 2031</p>
+        </div>
+    </div>
+    <div class="border-2 border-gray-300 gap-8 p-5 m-4 hover:border-green-500">
+        <div class="flex gap-3">
+        <img src="./images/cty11.png" alt="" class="w-14 h-14">
+        <div>
+        <p class="text-green-500 hover:underline">Accounting</p>
+        <div class="flex gap-1">
+        <h1 class="md:text-2xl text-xl font-bold hover:text-green-600">Junior Graphic Designer</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+        <div class="flex pt-2">
+        <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+          398 Manhattan Ave</div><div class="flex md:pl-3 pl-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+              </svg>
+              June 20, 2023</div> </div>
+            </div>
+        </div>
+        <div class="m-4">
+        <span class="bg-gray-200 rounded-xl p-2 hover:text-green-500 hover:cursor-pointer">On-site</span><span class="bg-red-100  text-red-500 rounded-xl p-2 ml-4">Urgent</span>
+    </div>
+    <div class="bg-gray-300 h-0.5 w-12/12 mx-auto"></div>
+        <div class=" flex pl-4 pt-4">
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              </div>
+           <p>$650 - $700 / month</p><p class="md:pl-96 pl-4">June 4, 2031</p>
+        </div>
+    </div>
+    <div class="border-2 border-gray-300 gap-8 p-5 m-4 hover:border-green-500">
+        <div class="flex gap-3">
+        <img src="./images/cty7.png" alt="" class="w-14 h-14">
+        <div>
+        <p class="text-green-500 hover:underline">Data Science</p>
+        <div class="flex gap-1">
+        <h1 class="text-2xl font-bold hover:text-green-600">Finance Manager</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"><p class="text-red-500">Filled</p></div>
+        <div class="flex gap-3 pt-2">
+        <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+          269 Norman Ave</div><div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+              </svg>
+              June 20, 2023</div> </div>
+            </div>
+        </div>
+        <div class="m-4">
+        <span class="bg-gray-200 rounded-xl p-2 hover:text-green-500 hover:cursor-pointer">Remote</span>
+    </div>
+    <div class="bg-gray-300 h-0.5 w-12/12 mx-auto"></div>
+        <div class=" flex pl-4 pt-4">
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              </div>
+           <p> $450 - $550 / month</p><p class="md:pl-96 pl-4">June 22, 2029</p>
+        </div>
+    </div>
+    <div class="border-2 border-gray-300 gap-8 p-5 m-4 hover:border-green-500">
+        <div class="flex gap-3">
+        <img src="./images/cty10.png" alt="" class="w-14 h-14">
+        <div>
+        <p class="text-green-500 hover:underline">Sales & Marketing</p>
+        <div class="flex gap-1">
+        <h1 class="text-2xl font-bold hover:text-green-600">Marketing Manager</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+        <div class="flex gap-3 pt-2">
+        <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+          178 7th Ave S, NY</div><div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+              </svg>
+              June 20, 2023</div> </div>
+            </div>
+        </div>
+        <div class="m-4">
+        <span class="bg-gray-200 rounded-xl p-2 hover:text-green-500 hover:cursor-pointer">Internship</span><span class="bg-gray-200 rounded-xl ml-4 p-2">Temporary</span>
+    </div>
+    <div class="bg-gray-300 h-0.5 w-12/12 mx-auto"></div>
+        <div class=" flex pl-4 pt-4">
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              </div>
+           <p>$8 - $10 / hour</p><p class="md:pl-96 pl-4">June 12, 2031</p>
+        </div>
+    </div>
+    <div class="border-2 border-gray-300 md:gap-8 p-5 m-4 hover:border-green-500 gap-0">
+        <div class="flex gap-3">
+        <img src="./images/cty16.png" alt="" class="w-14 h-14">
+        <div>
+        <p class="text-green-500 hover:underline">IT & Networking</p>
+        <div class="flex md:gap-1 gap-0">
+        <h1 class="md:text-2xl text-xl font-bold hover:text-green-600">Full Stack Development</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+        <div class="flex gap-3 pt-2">
+        <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+          77 Irving Pl, NY</div><div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+              </svg>
+              June 20, 2023</div> </div>
+            </div>
+        </div>
+        <div class="m-4">
+        <span class="bg-gray-200 rounded p-2 hover:text-green-500 hover:cursor-pointer">Temporary</span>
+    </div>
+    <div class="bg-gray-300 h-0.5 w-12/12 mx-auto"></div>
+        <div class=" flex pl-4 pt-4">
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              </div>
+           <p>$850 - $900 / month</p><p class="md:pl-96 pl-4">June 18, 2031</p>
+        </div>
+    </div>
+ </div>
+ <div class="flex justify-center items-center m-5">
+ <div class="flex justify-center rounded hover:cursor-pointer hover:bg-green-600 border-2 border-green-500 w-44 h-10 p-5 py-6 text-center items-center">
+    <h1 class="font-bold">See More Jobs <span class="pl-2">></span></h1>
+ </div>
+</div>
+<!-- what I can do -->
+<div class="bg-gray-200">
+    <div class="m-5 pt-20 pl-8">
+        <h1 class="text-4xl font-bold">What can I do with Jobtex?</h1>
+        <p class="text-gray-500 text-xl pt-4">Streamline your hiring process with strategic channels to reach qualified candidates</p>
+    </div>
+<div class="md:grid md:grid-cols-4 md:pb-20 md:pt-4 grid grid-cols-1 p-5">
+   <div class="md:pl-8 text-center md:text-left">
+   <div class="flex justify-center items-center md:justify-start mt-4"><img src="./images/back.svg" alt=""></div> 
+    <h1 class="font-bold text-xl pt-4">Reduce Hiring bias</h1>
+    <p class="text-lg text-gray-500 pt-4">Structured digital interviews increase the predictive validity of your hires by 65%.</p>
+   </div>
+   <div class="md:text-left text-center">
+   <div class="flex justify-center items-center md:justify-start mt-4"><img src="./images/back2.svg" alt=""></div> 
+    <h1 class="font-bold text-xl pt-4">Save time & headspace</h1>
+    <p class="text-lg text-gray-500 pt-4">Reduce your time-to-hire by up to 75% and free up headspace for other HR</p>
+   </div>
+   <div class="md:text-left text-center">
+   <div class="flex justify-center items-center md:justify-start mt-4"><img src="/images/back3.svg" alt=""></div> 
+    <h1 class="font-bold text-xl pt-4">minimize environmental impact</h1>
+    <p class="text-lg text-gray-500 pt-4">Did you know? U.S. office workers use ~10,000 sheets of paper every year</p>
+   </div>
+   <div class="md:text-left text-center">
+   <div class="flex justify-center items-center md:justify-start mt-6"><img src="./images/back5.svg" alt=""></div> 
+    <h1 class="font-bold text-xl pt-4">Reduce Hiring bias</h1>
+    <p class="text-lg text-gray-500 pt-4">Structured digital interviews increase the predictive validity of your hires by 65%.</p>
+</div>
+</div>
+</div>
+<!-- top employees -->
+<div class="mt-16 ml-12">
+    <h1 class="text-4xl font-bold">Top Employers</h1>
+    <p class="text-lg text-gray-500 pt-4">Showing companies based on reviews and recent job openings</p>
+</div>
+<div class="md:grid md:grid-cols-4 md:ml-8 md:mr-3 md:mt-6 md:gap-8 grid grid-cols-1 gap-3">
+    <div>
+        <div class="flex md:gap-2 md:border-2 md:rounded md:border-gray-300 p-4 hover:border-2 hover:border-green-500 gap-1 border-2 border-gray-300 rounded-2xl md:m-0 m-4">
+            <img src="./images/cty11.png" alt="" class="w-14 h-14">
+            <div>
+            <p class="text-green-500 hover:cursor-pointer hover:underline">IT & Networking</p>
+            <div class="flex gap-1">
+            <h1 class="text-2xl font-bold hover:cursor-pointer hover:text-green-600">Mermedia Ltd</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+            <div class="flex gap-1 pt-2">
+            <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+              195 Nassau Ave, Brooklyn</div> </div>
+                </div> </div>
+
+               
+    </div>
+    <div class="flex md:gap-2 md:border-2 md:rounded md:border-gray-300 p-4 hover:border-2 hover:border-green-500 gap-1 border-2 border-gray-300 rounded-2xl md:m-0 m-4">
+        <img src="./images/cty9.png" alt="" class="w-14 h-14">
+        <div>
+        <p class="text-green-500 hover:cursor-pointer hover:underline">Engineering</p>
+        <div class="flex gap-1">
+        <h1 class="text-2xl font-bold hover:cursor-pointer hover:text-green-600">Aprico Ltd</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+        <div class="flex gap-3 pt-2">
+        <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+          117 Avenue D, NY</div> </div>
+            </div> </div>
+<div class="flex md:gap-2 md:border-2 md:rounded md:border-gray-300 p-4 hover:border-2 hover:border-green-500 gap-1 border-2 border-gray-300 rounded-2xl md:m-0 m-4">
+<img src="./images/cty14.png" alt="" class="w-14 h-14">
+<div>
+<p class="text-green-500 hover:cursor-pointer hover:underline">Customer Service</p>
+<div class="flex gap-1">
+<h1 class="text-2xl font-bold hover:cursor-pointer hover:text-green-600">Barone Ltd</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+<div class="flex gap-3 pt-2">
+<div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+    </svg>
+    158 Ludlow St, NY</div></div>
+</div> </div>
+<div class="flex md:gap-2 md:border-2 md:rounded md:border-gray-300 p-4 hover:border-2 hover:border-green-500 gap-1 border-2 border-gray-300 rounded-2xl md:m-0 m-4">
+                        <img src="./images/cty15.png" alt="" class="w-14 h-14">
+    <div>
+    <p class="text-green-500 hover:cursor-pointer hover:underline">Accounting</p>
+    <div class="flex gap-1">
+    <h1 class="text-2xl font-bold hover:cursor-pointer hover:text-green-600">Acme Co</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+<div class="flex gap-3 pt-2">
+<div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+    </svg>
+    178 Broadway, Brooklyn</div></div>
+    </div> </div> 
+    <div>
+        <div class="flex md:gap-2 md:border-2 md:rounded md:border-gray-300 p-4 hover:border-2 hover:border-green-500 gap-1 border-2 border-gray-300 rounded-2xl md:m-0 m-4">
+            <img src="./images/cty10.png" alt="" class="w-14 h-14">
+            <div>
+            <p class="text-green-500 hover:cursor-pointer hover:underline">IT & Networking</p>
+            <div class="flex gap-1">
+            <h1 class="text-2xl font-bold hover:cursor-pointer hover:text-green-600">Biffco Ltd</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+            <div class="flex gap-1 pt-2">
+            <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+              254 S 2nd St, Brooklyn</div> </div>
+                </div> </div>
+
+               
+    </div>
+    <div class="flex md:gap-2 md:border-2 md:rounded md:border-gray-300 p-4 hover:border-2 hover:border-green-500 gap-1 border-2 border-gray-300 rounded-2xl md:m-0 m-4">
+        <img src="./images/cty16.png" alt="" class="w-14 h-14">
+        <div>
+        <p class="text-green-500 hover:cursor-pointer hover:underline">Writing</p>
+        <div class="flex gap-1">
+        <h1 class="text-2xl font-bold hover:cursor-pointer hover:text-green-600">Big Kahuna</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+        <div class="flex gap-3 pt-2">
+        <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+          83 Moorgate, Greater</div> </div>
+            </div> </div>
+<div class="flex md:gap-2 md:border-2 md:rounded md:border-gray-300 p-4 hover:border-2 hover:border-green-500 gap-1 border-2 border-gray-300 rounded-2xl md:m-0 m-4">
+<img src="./images/cty17.png" alt="" class="w-14 h-14">
+<div>
+<p class="text-green-500 hover:cursor-pointer hover:underline">Sales & Marketing</p>
+<div class="flex gap-1">
+<h1 class="text-2xl font-bold hover:cursor-pointer hover:text-green-600">Abstergo Ltd</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+<div class="flex gap-3 pt-2">
+<div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+    </svg>
+    29 Avenue D, NY</div></div>
+</div> </div>
+<div class="flex md:gap-2 md:border-2 md:rounded md:border-gray-300 p-4 hover:border-2 hover:border-green-500 gap-1 border-2 border-gray-300 rounded-2xl md:m-0 m-4">
+                        <img src="./images/cty13.png" alt="" class="w-14 h-14">
+    <div>
+    <p class="text-green-500 hover:cursor-pointer hover:underline">Project Manager</p>
+    <div class="flex gap-1">
+    <h1 class="text-2xl font-bold hover:cursor-pointer hover:text-green-600">Binford Ltd</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+<div class="flex gap-3 pt-2">
+<div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+    </svg>
+    125 Avenue D, NY</div></div>
+    </div> </div> 
+    <div>
+        <div class="flex md:gap-2 md:border-2 md:rounded md:border-gray-300 p-4 hover:border-2 hover:border-green-500 gap-1 border-2 border-gray-300 rounded-2xl md:m-0 m-4">
+            <img src="./images/cty12.png" alt="" class="w-14 h-14">
+            <div>
+            <p class="text-green-500 hover:cursor-pointer hover:underline">Customer Service</p>
+            <div class="flex gap-1">
+            <h1 class="text-2xl font-bold hover:cursor-pointer hover:text-green-600">Samsong</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+            <div class="flex gap-1 pt-2">
+            <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+              348 Wythe Ave, Brooklyn</div> </div>
+                </div> </div>
+
+               
+    </div>
+    <div class="flex md:gap-2 md:border-2 md:rounded md:border-gray-300 p-4 hover:border-2 hover:border-green-500 gap-1 border-2 border-gray-300 rounded-2xl md:m-0 m-4">
+        <img src="./images/cty6.png" alt="" class="w-14 h-14">
+        <div>
+        <p class="text-green-500 hover:cursor-pointer hover:underline">Accounting</p>
+        <div class="flex gap-1">
+        <h1 class="text-2xl font-bold hover:cursor-pointer hover:text-green-600">Rigid Co.</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+        <div class="flex gap-3 pt-2">
+        <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+          57 Pitfield St</div> </div>
+            </div> </div>
+<div class="flex md:gap-2 md:border-2 md:rounded md:border-gray-300 p-4 hover:border-2 hover:border-green-500 gap-1 border-2 border-gray-300 rounded-2xl md:m-0 m-4">
+<img src="./images/cty3.png" alt="" class="w-14 h-14">
+<div>
+<p class="text-green-500 hover:cursor-pointer hover:underline">Customer Service</p>
+<div class="flex gap-1">
+<h1 class="text-2xl font-bold hover:cursor-pointer hover:text-green-600">Bosch Ltd</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+<div class="flex gap-3 pt-2">
+<div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+    </svg>
+    110 Bishopsgate</div></div>
+</div> </div>
+<div class="flex md:gap-2 md:border-2 md:rounded md:border-gray-300 p-4 hover:border-2 hover:border-green-500 gap-1 border-2 border-gray-300 rounded-2xl md:m-0 m-4">
+                        <img src="./images/cty15.png" alt="" class="w-14 h-14">
+    <div>
+    <p class="text-green-500 hover:cursor-pointer hover:underline">Accounting</p>
+    <div class="flex gap-1">
+    <h1 class="text-2xl font-bold hover:cursor-pointer hover:text-green-600">Employer</h1><img src="./images/flash24.png" alt="" class="w-6 h-8"></div>
+<div class="flex gap-3 pt-2">
+<div class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+    </svg>
+    162 Bedford Ave, Brooklyn</div></div>
+    </div> </div>                               
+</div>
+<!-- profile -->
+ <div>
+    <div class="text-center md:pt-16 p-4">
+        <h1 class="text-3xl font-bold ">What our clients are saying</h1>
+        <p class="text-gray-500 text-lg pt-4 mb-6">Showing companies based on reviews and recent job openings</p>
+    </div>
+ </div>
+<!-- owl -->
+<div class="owl-carousel owl-theme">
+    <div class="item bg-white p-5 rounded">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod deserunt rem quaerat libero ab aut explicabo sequi laudantium. Eos blanditiis necessitatibus ex cum similique tempore repellat deleniti eligendi libero, et provident minima ullam vitae eveniet aspernatur soluta rem at dolorem. Quod fugit modi quaerat. Quam inventore a labore laudantium.</p>
+       <div class="flex pt-3">
+        <div class="rounded-full w-[50px] h-[50px] overflow-hidden flex items-center">
+        <img src="./images/image-01.jpg" alt=""></div>
+        <div class="pl-3">
+        <h1 class="font-bold">Albert Flores</h1>
+        <p class="text-green-400">Data Architect</p>
+        <div class="stars text-yellow-500">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+    </div>
+    </div>
+   
+</div>
+<div class="item bg-white p-5 rounded">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod deserunt rem quaerat libero ab aut explicabo sequi laudantium. Eos blanditiis necessitatibus ex cum similique tempore repellat deleniti eligendi libero, et provident minima ullam vitae eveniet aspernatur soluta rem at dolorem. Quod fugit modi quaerat. Quam inventore a labore laudantium.</p>
+   <div class="flex pt-3">
+    <div class="rounded-full w-[50px] h-[50px] overflow-hidden flex items-center">
+    <img src="./images/image-01.jpg" alt=""></div>
+    <div class="pl-3">
+    <h1 class="font-bold">Albert Flores</h1>
+    <p class="text-green-400">Data Architect</p>
+    <div class="stars text-yellow-500">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+</div>
+</div>
+
+</div>
+<div class="item bg-white p-5 rounded">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod deserunt rem quaerat libero ab aut explicabo sequi laudantium. Eos blanditiis necessitatibus ex cum similique tempore repellat deleniti eligendi libero, et provident minima ullam vitae eveniet aspernatur soluta rem at dolorem. Quod fugit modi quaerat. Quam inventore a labore laudantium.</p>
+   <div class="flex pt-3">
+    <div class="rounded-full w-[50px] h-[50px] overflow-hidden flex items-center">
+    <img src="./images/image-01.jpg" alt=""></div>
+    <div class="pl-3">
+    <h1 class="font-bold">Albert Flores</h1>
+    <p class="text-green-400">Data Architect</p>
+    <div class="stars text-yellow-500">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+</div>
+</div>
+
+</div>
+<div class="item bg-white p-5 rounded">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod deserunt rem quaerat libero ab aut explicabo sequi laudantium. Eos blanditiis necessitatibus ex cum similique tempore repellat deleniti eligendi libero, et provident minima ullam vitae eveniet aspernatur soluta rem at dolorem. Quod fugit modi quaerat. Quam inventore a labore laudantium.</p>
+   <div class="flex pt-3">
+    <div class="rounded-full w-[50px] h-[50px] overflow-hidden flex items-center">
+    <img src="./images/image-01.jpg" alt=""></div>
+    <div class="pl-3">
+    <h1 class="font-bold">Albert Flores</h1>
+    <p class="text-green-400">Data Architect</p>
+    <div class="stars text-yellow-500">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+</div>
+</div>
+
+</div>
+<div class="item bg-white p-5 rounded">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod deserunt rem quaerat libero ab aut explicabo sequi laudantium. Eos blanditiis necessitatibus ex cum similique tempore repellat deleniti eligendi libero, et provident minima ullam vitae eveniet aspernatur soluta rem at dolorem. Quod fugit modi quaerat. Quam inventore a labore laudantium.</p>
+   <div class="flex pt-3">
+    <div class="rounded-full w-[50px] h-[50px] overflow-hidden flex items-center">
+    <img src="./images/image-01.jpg" alt=""></div>
+    <div class="pl-3">
+    <h1 class="font-bold">Albert Flores</h1>
+    <p class="text-green-400">Data Architect</p>
+    <div class="stars text-yellow-500">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+</div>
+</div>
+
+</div>
+<div class="item bg-white p-5 rounded">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod deserunt rem quaerat libero ab aut explicabo sequi laudantium. Eos blanditiis necessitatibus ex cum similique tempore repellat deleniti eligendi libero, et provident minima ullam vitae eveniet aspernatur soluta rem at dolorem. Quod fugit modi quaerat. Quam inventore a labore laudantium.</p>
+   <div class="flex pt-3">
+    <div class="rounded-full w-[50px] h-[50px] overflow-hidden flex items-center">
+    <img src="./images/image-01.jpg" alt=""></div>
+    <div class="pl-3">
+    <h1 class="font-bold">Albert Flores</h1>
+    <p class="text-green-400">Data Architect</p>
+    <div class="stars text-yellow-500">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+</div>
+</div>
+
+</div>
+<div class="item bg-white p-5 rounded">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod deserunt rem quaerat libero ab aut explicabo sequi laudantium. Eos blanditiis necessitatibus ex cum similique tempore repellat deleniti eligendi libero, et provident minima ullam vitae eveniet aspernatur soluta rem at dolorem. Quod fugit modi quaerat. Quam inventore a labore laudantium.</p>
+   <div class="flex pt-3">
+    <div class="rounded-full w-[50px] h-[50px] overflow-hidden flex items-center">
+    <img src="./images/image-01.jpg" alt=""></div>
+    <div class="pl-3">
+    <h1 class="font-bold">Albert Flores</h1>
+    <p class="text-green-400">Data Architect</p>
+    <div class="stars text-yellow-500">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+</div>
+</div>
+
+</div>
+<div class="item bg-white p-5 rounded">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod deserunt rem quaerat libero ab aut explicabo sequi laudantium. Eos blanditiis necessitatibus ex cum similique tempore repellat deleniti eligendi libero, et provident minima ullam vitae eveniet aspernatur soluta rem at dolorem. Quod fugit modi quaerat. Quam inventore a labore laudantium.</p>
+   <div class="flex pt-3">
+    <div class="rounded-full w-[50px] h-[50px] overflow-hidden flex items-center">
+    <img src="./images/image-01.jpg" alt=""></div>
+    <div class="pl-3">
+    <h1 class="font-bold">Albert Flores</h1>
+    <p class="text-green-400">Data Architect</p>
+    <div class="stars text-yellow-500">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+</div>
+</div>
+
+</div>
+<div class="item bg-white p-5 rounded">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod deserunt rem quaerat libero ab aut explicabo sequi laudantium. Eos blanditiis necessitatibus ex cum similique tempore repellat deleniti eligendi libero, et provident minima ullam vitae eveniet aspernatur soluta rem at dolorem. Quod fugit modi quaerat. Quam inventore a labore laudantium.</p>
+   <div class="flex pt-3">
+    <div class="rounded-full w-[50px] h-[50px] overflow-hidden flex items-center">
+    <img src="./images/image-01.jpg" alt=""></div>
+    <div class="pl-3">
+    <h1 class="font-bold">Albert Flores</h1>
+    <p class="text-green-400">Data Architect</p>
+    <div class="stars text-yellow-500">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+</div>
+</div>
+
+</div>
+<div class="item bg-white p-5 rounded">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod deserunt rem quaerat libero ab aut explicabo sequi laudantium. Eos blanditiis necessitatibus ex cum similique tempore repellat deleniti eligendi libero, et provident minima ullam vitae eveniet aspernatur soluta rem at dolorem. Quod fugit modi quaerat. Quam inventore a labore laudantium.</p>
+   <div class="flex pt-3">
+    <div class="rounded-full w-[50px] h-[50px] overflow-hidden flex items-center">
+    <img src="./images/image-01.jpg" alt=""></div>
+    <div class="pl-3">
+    <h1 class="font-bold">Albert Flores</h1>
+    <p class="text-green-400">Data Architect</p>
+    <div class="stars text-yellow-500">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+</div>
+</div>
+
+</div>
+    <div class="item bg-white p-5 rounded">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod deserunt rem quaerat libero ab aut explicabo sequi laudantium. Eos blanditiis necessitatibus ex cum similique tempore repellat deleniti eligendi libero, et provident minima ullam vitae eveniet aspernatur soluta rem at dolorem. Quod fugit modi quaerat. Quam inventore a labore laudantium.</p>
+       <div class="flex pt-3">
+        <div class="rounded-full w-[50px] h-[50px] overflow-hidden flex items-center">
+        <img src="./images/image-01.jpg" alt=""></div>
+        <div class="pl-3">
+        <h1 class="font-bold">Albert Flores</h1>
+        <p class="text-green-400">Data Architect</p>
+        <div class="stars text-yellow-500">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+    </div>
+    </div>
+   
+</div>
+<div class="item bg-white p-5 rounded">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod deserunt rem quaerat libero ab aut explicabo sequi laudantium. Eos blanditiis necessitatibus ex cum similique tempore repellat deleniti eligendi libero, et provident minima ullam vitae eveniet aspernatur soluta rem at dolorem. Quod fugit modi quaerat. Quam inventore a labore laudantium.</p>
+   <div class="flex pt-3">
+    <div class="rounded-full w-[50px] h-[50px] overflow-hidden flex items-center">
+    <img src="./images/image-01.jpg" alt=""></div>
+    <div class="pl-3">
+    <h1 class="font-bold">Albert Flores</h1>
+    <p class="text-green-400">Data Architect</p>
+    <div class="stars text-yellow-500">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+</script>
+ 
+
+<!-- Hiring -->
+ <div class="bg-[#123841] text-white p-10">
+  <div class="text-center">
+    <p class="font-bold text-lg">Over 100,000 recruiters use Jobtex to modernize their hiring</p>
+  </div>
+  <div class="grid grid-cols-6 pt-8">
+    <div class="hover:text-white hover:cursor-pointer">
+        <img src="./images/brand6.png" alt="" class="w-52 h-auto">
+    </div>
+    <div class="hover:cursor-pointer">
+      <img src="./images/brand1.png" alt="" class="w-52 h-auto">  
+    </div>
+    <div class="hover:cursor-pointer">
+      <img src="./images/brand2.png" alt="" class="w-52 h-auto"> </div>  
+    <div class="hover: text-white hover:cursor-pointer">
+     <img src="./images/brand3.png" alt="" class="w-52 h-auto">   
+    </div>
+    <div class="hover: text-white hover:cursor-pointer">
+        <img src="./images/brand4.png" alt="" class="w-52 h-auto">
+    </div>
+    <div class="hover: hover:cursor-pointer">
+        <img src="./images/brand5.png" alt="" class="w-56 h-auto">
+    </div>
+  </div>
+ </div>
+ <div> 
+
+ </div>
+ <div class="md:flex justify-between static md:mt-8 md:mb-8 my-4">
+    <div class="pl-6 hover:cursor-pointer">
+        <img src="./images/logo_black.png" alt="" class="w-32 h-auto">
+    </div>
+    <div class="flex md:gap-3 md:pr-6 gap-1 pt-2 md:pt-0 md:pl-0 pl-4">
+        <p class="md:pt-2">Follow us:</p>
+        <div class="hover:bg-green-700 bg-white rounded-full w-[45px] h-[45px] overflow-hidden flex items-center justify-center"><img src="./images/facebook-app-symbol.png" alt="" class="w-6 h-auto"></div>
+        <div class="hover:bg-green-700 bg-white rounded-full w-[45px] h-[45px] overflow-hidden flex items-center justify-center"> <img src="./images/twitter.png" alt="" class="w-6 h-auto"></div>
+        <div class="hover:bg-green-700 bg-white rounded-full w-[45px] h-[45px] overflow-hidden flex items-center justify-center"> <img src="./images/linkedin.png" alt="" class="w-6 h-auto"></div>
+        <div class="hover:bg-green-700 bg-white rounded-full w-[45px] h-[45px] overflow-hidden flex items-center justify-center"> <img src="./images/google.png" alt="" class="w-6 h-auto"></div>
+        <div class="hover:bg-green-700 bg-white rounded-full w-[45px] h-[45px] overflow-hidden flex items-center justify-center"> <img src="./images/pinterest.png" alt="" class="w-6 h-auto"></div>
+
+    </div>
+ </div>
+ <div class="bg-slate-300 w-full h-0.5"></div>
+ <!-- last section -->
+  <div class="md:grid md:grid-cols-5 md:mt-8 grid grid-cols-2 gap-5 mt-4">
+     <div class="md:pl-8 pl-0">
+        <div class="flex pt-2 pb-2 gap-2">
+            <div class="flex">
+                <div>
+        <img src="./images/phone-call.png" alt="" class="w-8 h-5"></div>
+        <div class="pl-6">
+        <p class="">Need help? 24/7</p>
+        <p class="font-bold">001-1234-8888</p></div>
+    </div>
+    </div>
+    <div>
+        <p class="text-gray-500">Job Searching Just Got Easy. Use Jobtex to run a hiring site and earn money in the process!</p>
+        <div class="flex pt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+            <p>118 E 128th St, East Chicago, IN 46312, US</p>
+        </div>
+    </div>
+    <div class="flex pt-2">
+        <input type="text" placeholder="Your Email Address" class="bg-[#fff] p-2 px-4 hover:border-2 border-green-500 w-full">
+        <div class="w-10 h-10 bg-[#14A077] flex justify-center items-center">
+        <img src="./images/telegram.png" alt="" class="w-6 h-auto">
+    </div>
+    </div>
+     </div>
+     <div class="md:text-center text-left">
+        <div class="flex flex-col gap-4">
+        <p class="font-bold">Quick Links</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Job Packages</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Post new Job</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Job Listing</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Candidates</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Employers</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Terms of Use</p>
+    </div>
+     </div>
+     <div class="md:text-center text-left">
+        <div class="flex flex-col gap-4">
+        <p class="font-bold">For Candidates</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">User Dashboard</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">CV Packages</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Candidate Grid</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Candidate List</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Messages</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Job Featured</p>
+    </div>
+     </div>
+     <div class="md:text-center text-left">
+        <div class="flex flex-col gap-4">
+        <p class="font-bold">For Employers</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Post New Job</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Job Listing</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Employers List</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Job Packages</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">About Us</p>
+        <p class="text-gray-500 hover:cursor-pointer hover:text-green-500 hover:underline">Terms of Use</p>
+    </div>
+     </div>
+     <div class="md:text-center text-left">
+        <p class="font-bold pb-4">Download App</p>
+        <div class="flex flex-col gap-4 md:justify-center md:items-center justify-start">
+        <img src="./images/btn3.png" alt="" class="w-32 h-auto">
+        <img src="./images/btn4.png" alt="" class="w-32 h-auto">
+    </div>
+     </div>
+  </div>
+  <div class="bg-slate-400 w-full h-0.5 mt-8"></div>
+  <div class="md:mt-8 text-gray-500 static md:flex  md:justify-between">
+     <div>
+        <p class="md:pl-6 pl-24 md:my-0 my-2">©2023 Jobtex. All Rights Reserved</p>
+     </div>
+     <div class="flex md:gap-5 gap-3 md:pl-0 pl-16 md:pr-6 mb-4 ">
+        <p class="hover:text-green-500 hover:cursor-pointer hover:underline">Terms of Srvices</p>
+        <p class="hover:text-green-500 hover:cursor-pointer hover:underline">Privacy Policy</p>
+        <p class="hover:text-green-500 hover:cursor-pointer hover:underline">Cookie Ploicy</p>
+     </div>
+  </div>
+</body>
+</html>
+<script>
+    function myFunction() {
+       var x = document.getElementById("mydiv");
+       var close = document.getElementById("closeicon");
+       var open = document.getElementById("menuicon");
+   
+       if (x.classList.contains("hidden")) {
+         x.classList.remove("hidden");
+         close.classList.remove("hidden");
+         open.classList.add("hidden");
+       } else {
+         x.classList.add("hidden");
+         close.classList.add("hidden");
+         open.classList.remove("hidden");
+       }
+     }
+   </script>
